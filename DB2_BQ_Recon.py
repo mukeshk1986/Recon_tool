@@ -1,5 +1,5 @@
 import DB2_BQ_Reconn_Library as TCS
-
+import pandas as pd
 if __name__ == '__main__':
   V_Config_Project='edp-prod-hcbstorage'
   V_Config_Dataset='edp_hcb_core_src'
