@@ -21,7 +21,7 @@ class CDM_Compare:
     #get_db2_query_job = bq_client.query(get_db2_query)
     #get_db2_query_results = get_db2_query_job.result()
     #print("Got {} rows.".format(get_db2_query_results.total_rows))
-    #need to add more code
+    #need to add more code abcd
     print(get_db2_query)
     return get_db2_query
 
