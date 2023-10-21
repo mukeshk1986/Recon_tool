@@ -17,6 +17,10 @@ class CDM_Compare:
     #bq_client = bigquery.Client(project=V_Config_Project)
     get_db2_query= "select DB2_SOURCE_LOAD_TIMESTAMP Last_DB2_Date, db2_record_count from `"+self.V_Config_Project+"."+self.V_Config_Dataset+"."+self.V_Config_New_Table+\
                    "` where db2_source_table = upper('"+V_Source_Table+"');"
+    #logging.info(get_db2_query)
+    #get_db2_query_job = bq_client.query(get_db2_query)
+    #get_db2_query_results = get_db2_query_job.result()
+    #print("Got {} rows.".format(get_db2_query_results.total_rows))
     print(get_db2_query)
     return get_db2_query
 
